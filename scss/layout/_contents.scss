@@ -30,6 +30,68 @@
 			width: 100%;
 			position: absolute;
 			
+			// 設備・仕様
+			&.-setsubiBtn{
+				top: 55%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 45%;
+				@include mq(tb){
+					top: 68%;
+					width: 20%;
+					max-width: 270px;
+				}
+			}
+			// デザイン
+			&.-design{
+				@include mq(tb){
+					top: 54%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			// Youtube
+			&.-youtubeBox{
+				top: 93.5%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 85%;
+				@include mq(tb){
+					top: 85.5%;
+    				left: 34%;
+					width: 26%;
+					// width: 30%;
+					max-width: 480px;
+				}
+			}
+			// 耐震・構造ボタン
+			&.-taishinBtn{
+				top: 60%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 90%;
+				@include mq(tb){
+					top: 25%;
+					left: 70%;
+					width: 25%;
+				}
+			}
+			// 最長35年保証ボタン
+			&.-h35Btn{
+				top: 88%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 90%;
+				@include mq(tb){
+					top: 78%;
+					left: 70%;
+					width: 25%;
+				}
+			}
+
+
+
+
 			//サイト右側中段に表示 （PCのみ）
 			&.-right-topBtn{
 				top: 2.5%;

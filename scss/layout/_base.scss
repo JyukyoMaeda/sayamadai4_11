@@ -71,15 +71,22 @@ img{
 
 
 .w1200{
-	width: 95% !important;
+	width: 75% !important;
 	max-width: 1200px;
 	margin: auto;
+	&.-tb70{
+		@include mq(tb){
+			width: 65% !important;
+		}
+	}
 	&.-s100{
-		width: 100% !important;
+		@include mq(sp){
+			width: 100% !important;
+		}
 	}
 }
 .w1050{
-	width: 95%;
+	width: 70%;
 	max-width: 1050px;
 	margin: auto;
 }

@@ -30,6 +30,7 @@ img {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
@@ -124,16 +125,23 @@ img {
 }
 
 .w1200 {
-  width: 95% !important;
+  width: 75% !important;
   max-width: 1200px;
   margin: auto;
 }
-.w1200.-s100 {
-  width: 100% !important;
+@media screen and (min-width: 767px) {
+  .w1200.-tb70 {
+    width: 65% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .w1200.-s100 {
+    width: 100% !important;
+  }
 }
 
 .w1050 {
-  width: 95%;
+  width: 70%;
   max-width: 1050px;
   margin: auto;
 }
@@ -498,6 +506,66 @@ img {
   width: 100%;
   position: absolute;
 }
+.l-contents.-img-bg .l-contentsBox.-setsubiBtn {
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-setsubiBtn {
+    top: 68%;
+    width: 20%;
+    max-width: 270px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-design {
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-youtubeBox {
+  top: 93.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-youtubeBox {
+    top: 85.5%;
+    left: 34%;
+    width: 26%;
+    max-width: 480px;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-taishinBtn {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-taishinBtn {
+    top: 25%;
+    left: 70%;
+    width: 25%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-h35Btn {
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-h35Btn {
+    top: 78%;
+    left: 70%;
+    width: 25%;
+  }
+}
 .l-contents.-img-bg .l-contentsBox.-right-topBtn {
   top: 2.5%;
   left: 50%;
@@ -779,16 +847,16 @@ img {
   }
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(1) .l-linkImg {
-  background: #002a37;
+  background: #000000;
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(2) .l-linkImg {
-  background: hsla(194, 100%, 11%, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(3) .l-linkImg {
-  background: hsla(194, 100%, 11%, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(4) .l-linkImg {
-  background: hsla(194, 100%, 11%, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 .l-flex--area .l-flex--contents.-contact-box_okano {
   display: flex;
@@ -812,13 +880,13 @@ img {
   }
 }
 .l-flex--area .l-flex--contents.-contact-box_okano .flexItem:nth-child(1) .l-linkImg {
-  background: #002a37;
+  background: #000000;
 }
 .l-flex--area .l-flex--contents.-contact-box_okano .flexItem:nth-child(2) .l-linkImg {
-  background: hsla(194, 100%, 11%, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 .l-flex--area .l-flex--contents.-contact-box_okano .flexItem:nth-child(3) .l-linkImg {
-  background: hsla(194, 100%, 11%, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 .l-flex--area .l-flex--contents.-tab-box {
   width: 90vw;
@@ -1609,16 +1677,16 @@ img {
   }
 }
 .l-linkImg.-contact-box.-box01 {
-  background: #002a37;
+  background: #000000;
 }
 .l-linkImg.-contact-box.-box02 {
-  background: hsla(194, 100%, 11%, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 .l-linkImg.-contact-box.-box03 {
-  background: hsla(194, 100%, 11%, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 .l-linkImg.-contact-box.-box04 {
-  background: hsla(194, 100%, 11%, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 .l-linkImg.-underLine {
   position: relative;
@@ -1702,16 +1770,16 @@ img {
 }
 
 .more-lists .more-list:first-child .l-linkImg.-underLine:hover {
-  background: #002a37;
+  background: #000000;
 }
 .more-lists .more-list:nth-child(2) .l-linkImg.-underLine:hover {
-  background: hsla(194, 100%, 11%, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 .more-lists .more-list:nth-child(3) .l-linkImg.-underLine:hover {
-  background: hsla(194, 100%, 11%, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 .more-lists .more-list:nth-child(4) .l-linkImg.-underLine:hover {
-  background: hsla(194, 100%, 11%, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .inline {
